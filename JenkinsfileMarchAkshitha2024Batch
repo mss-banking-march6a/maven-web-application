@@ -14,11 +14,12 @@ node{
     stage('Build'){
         sh "${MavenHome}/bin/mvn clean package"
     }
-    /*
+    
     stage('ExecuteSonarQubeReport'){
         sh "${MavenHome}/bin/mvn clean sonar:sonar"
     }
-    
+
+/*
     stage('UploadArtifactIntoNexus'){
         sh "${MavenHome}/bin/mvn clean deploy"
     }
@@ -29,5 +30,6 @@ node{
 }
     }
 */
+
 }
 
